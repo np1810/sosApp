@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+	<Pause length="1"/>
+    <Gather action="/voiceControl" method="POST" timeout="10" numDigits="6">
+        <Say voice="alice">Please enter your pincode</Say>
+    </Gather>
+	<Pause length="1"/>
+	<Say voice="alice">Incorrect pincode please try again</Say>
+	<Hangup/>
+</Response>
